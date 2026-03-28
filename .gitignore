@@ -1,0 +1,8 @@
+.DS_Store
+task.md
+walkthrough.md
+implementation_plan.md
+.gemini/
+/tmp/
+*.pdf
+/Users/roshanamarujala/.gemini/
