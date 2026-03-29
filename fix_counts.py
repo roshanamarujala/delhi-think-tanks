@@ -55,8 +55,9 @@ for id_val, abbr in domains:
 
 # We will just use regex to replace the exact metrics block
 def replace_metric(html_str, label, new_count):
-    pattern = r'(<span class="count"[^>]*>)\d+(</span>\s*<span class="label">{}</span>)'.format(label)
-    return re.sub(pattern, rf'\g<1>{new_count}\g<2>', html_str)
+    # This regex is now whitespace-insensitive for both count and label
+    pattern = r'(<span class="count"[^>]*>)\s*\d+\s*(</span>\s*<span class="label"[^>]*>)\s*{}\s*(</span>)'.format(re.escape(label))
+    return re.sub(pattern, rf'\g<1>{new_count}\g<2>{label}\g<3>', html_str, flags=re.IGNORECASE)
 
 html = replace_metric(html, 'Total Institutions', total_cards)
 html = replace_metric(html, 'Govt Bodies', type_counts['govt'])
@@ -66,8 +67,9 @@ html = replace_metric(html, 'Private / Independent', type_counts['private'])
 # Replace the text "191 verified institutions" in the header paragraph
 html = re.sub(r'<strong>\d+ verified institutions</strong>', f'<strong>{total_cards} verified institutions</strong>', html)
 # Replace "THE 190+ INSTITUTIONAL LIST" in subtitle
-html = re.sub(r'THE \d+\+ INSTITUTIONAL LIST', f'THE {total_cards} INSTITUTIONAL LIST', html)
-html = re.sub(r'Search \d+\+ institutions', f'Search {total_cards} institutions', html)
+html = re.sub(r'THE \d+ INSTITUTIONAL LIST', f'THE {total_cards} INSTITUTIONAL LIST', html)
+html = re.sub(r'Search \d+ institutions', f'Search {total_cards} institutions', html)
+html = re.sub(r'(\d+)\s+verified institutions', f'{total_cards} verified institutions', html)
 
 # Replace domain badges
 # Let's find all domain badges and replace their content based on the section id they are in.
