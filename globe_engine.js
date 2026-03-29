@@ -1,6 +1,6 @@
 /**
- * Delhi Think Tanks 3D Strategic Globe Engine
- * Powered by Globe.gl
+ * Delhi Think Tanks 3D Strategic Globe Engine - RECONSTRUCTED
+ * High-Reliability rendering for Strategic Intelligence
  */
 
 let myGlobe;
@@ -19,20 +19,21 @@ const SECTOR_COLORS = {
 };
 
 const DELHI_COORDS = { lat: 28.61, lng: 77.23 };
+// 1x1 Transparent Base64 to satisfy Globe.gl without loading external images
+const BLANK_TEXTURE = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
 
 function initGlobe() {
     const container = document.getElementById('globe-container');
     if (!container) return;
 
-    // 1. Extract Data from DOM
+    // 1. EXTRACT DATA - 177 VERIFIED NODES
+    nodesData = [];
     const cards = document.querySelectorAll('.tt-card');
     cards.forEach((card, index) => {
         const name = card.querySelector('.tt-name').innerText;
         const focus = card.querySelector('.tt-focus').innerText;
-        const cardId = card.closest('.domain-row').id;
         
-        // Find which sector class it has
-        let color = '#475569'; // Default
+        let color = '#475569';
         for (const [cls, hex] of Object.entries(SECTOR_COLORS)) {
             if (card.classList.contains(cls)) {
                 color = hex;
@@ -40,111 +41,110 @@ function initGlobe() {
             }
         }
 
-        // Generate stylized "Impact Cluster" coordinates
-        // We use a small spread to make them visible but centered on India
-        const spread = 2.5; 
+        const spread = 2.8; 
         nodesData.push({
             id: index,
             name: name,
             focus: focus,
             lat: DELHI_COORDS.lat + (Math.random() - 0.5) * spread,
             lng: DELHI_COORDS.lng + (Math.random() - 0.5) * spread,
-            size: 0.15,
+            size: 0.18,
             color: color,
             element: card
         });
     });
 
-    // 2. Initialize Globe
+    // 2. INITIALIZE GLOBE WITH TACTICAL FALLBACKS
     myGlobe = Globe()
         (container)
+        .globeImageUrl(BLANK_TEXTURE)
         .backgroundColor('rgba(0,0,0,0)')
         .showAtmosphere(true)
-        .atmosphereColor('#3b82f6') // Deep strategic blue
-        .atmosphereDaylightAlpha(0.3)
-        .showGraticules(true) // Tactical grid lines
+        .atmosphereColor('#3b82f6')
+        .atmosphereDaylightAlpha(0.25)
+        .showGraticules(true)
         .pointsData(nodesData)
-        .pointColor('color')
-        .pointRadius(0.8) // Larger nodes for better visibility
-        .pointAltitude(0.04)
+        .pointColor(d => d.color || '#3b82f6')
+        .pointRadius(0.8) // Explicit large radius for better visibility
+        .pointAltitude(0.08)
         .pointLabel(d => `
             <div class="globe-tooltip">
-                <div style="font-weight: 800; color: ${d.color}; border-bottom: 2px solid ${d.color}44; padding-bottom: 4px; margin-bottom: 6px; font-size: 1rem;">
+                <div style="font-weight: 800; color: ${d.color}; border-bottom: 2px solid ${d.color}44; padding-bottom: 4px; margin-bottom: 6px; font-size: 0.95rem;">
                     ${d.name}
                 </div>
                 <div style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.4;">
-                    <span style="color: #94a3b8; font-weight: 700; text-transform: uppercase; font-size: 0.7rem;">Strategic Focus:</span><br/>
+                    <span style="color: #94a3b8; font-weight: 700; text-transform: uppercase; font-size: 0.65rem;">Strategic Focus</span><br/>
                     ${d.focus}
                 </div>
             </div>
         `)
-        .onPointClick(d => {
-            // Stop rotation during focus
-            myGlobe.controls().autoRotate = false;
-            
-            // Strategic zoom to node
-            myGlobe.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.2 }, 1200);
-            
-            // Navigate to card
-            setTimeout(() => {
-                d.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                d.element.style.outline = '4px solid ' + d.color;
-                d.element.style.boxShadow = '0 0 50px ' + d.color + '44';
-                d.element.classList.add('discovery-glow');
-                
-                setTimeout(() => {
-                    d.element.style.outline = '';
-                    d.element.style.boxShadow = '';
-                    d.element.classList.remove('discovery-glow');
-                    myGlobe.controls().autoRotate = true; // Resume auto-rotate
-                }, 4000);
-            }, 800);
+        .onPointClick(node => {
+            handleInstitutionalNavigation(node);
         });
 
-    // Custom Globe Material for "Strategic Intelligence" Look
-    const globeMaterial = myGlobe.globeMaterial();
-    globeMaterial.color = new THREE.Color('#0f172a'); // Deep navy base
-    globeMaterial.emissive = new THREE.Color('#1e293b');
-    globeMaterial.emissiveIntensity = 0.1;
-    globeMaterial.shininess = 0.8;
+    // ROBUST MATERIAL SETTER
+    setTimeout(() => {
+        try {
+            const material = myGlobe.globeMaterial();
+            if (material) {
+                if (window.THREE) {
+                    material.color = new THREE.Color('#0f172a');
+                } else {
+                    material.color.set('#0f172a');
+                }
+                material.opacity = 0.98;
+                material.transparent = true;
+            }
+        } catch (e) {
+            console.error("Globe material tweak failed", e);
+        }
+    }, 100);
 
-    // 3. Configure Controls
+    // 3. CONFIGURE CONTROLS
     const controls = myGlobe.controls();
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.6;
     controls.enableZoom = true;
-    controls.enablePan = false; // Keep it focused on the sphere
-    controls.minDistance = 250;
-    controls.maxDistance = 500;
+    controls.minDistance = 200;
+    controls.maxDistance = 600;
 
-    // Center on India/Delhi initially
+    // Start Focus
     myGlobe.pointOfView({ lat: 20, lng: 77, altitude: 2.2 }, 0);
+}
+
+function handleInstitutionalNavigation(node) {
+    if (!node || !node.element) return;
+
+    // Stop rotation
+    myGlobe.controls().autoRotate = false;
+    
+    // Zoom focus
+    myGlobe.pointOfView({ lat: node.lat, lng: node.lng, altitude: 1.1 }, 1000);
+    
+    // Trigger scroll and visual feedback
+    setTimeout(() => {
+        node.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // High-vis pulse
+        node.element.style.transition = 'all 0.5s ease';
+        node.element.style.outline = '8px solid ' + node.color;
+        node.element.classList.add('discovery-glow');
+        
+        setTimeout(() => {
+            node.element.style.outline = 'none';
+            node.element.classList.remove('discovery-glow');
+            myGlobe.controls().autoRotate = true;
+        }, 5000);
+    }, 1100);
 }
 
 function triggerRandomDiscovery() {
     if (!nodesData.length) return;
-    
     const randomIndex = Math.floor(Math.random() * nodesData.length);
-    const node = nodesData[randomIndex];
-
-    // Spin and zoom to the node
-    myGlobe.pointOfView({ lat: node.lat, lng: node.lng, altitude: 1 }, 2000);
-    
-    // Simulate a click after arrival
-    setTimeout(() => {
-        node.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        node.element.style.outline = '4px solid ' + node.color;
-        node.element.style.transform = 'scale(1.02)';
-        node.element.classList.add('discovery-glow');
-        
-        setTimeout(() => {
-            node.element.style.outline = '';
-            node.element.style.transform = '';
-        }, 5000);
-    }, 2100);
+    handleInstitutionalNavigation(nodesData[randomIndex]);
 }
 
-// Start when DOM is ready
 window.addEventListener('load', () => {
-    initGlobe();
+    // Small delay to ensure WebGL context is ready
+    setTimeout(initGlobe, 500);
 });
