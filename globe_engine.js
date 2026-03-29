@@ -58,11 +58,11 @@ function initGlobe() {
     // 2. Initialize Globe
     myGlobe = Globe()
         (container)
-        .globeImageUrl('//unpkg.com/three-globe/example/img/earth-white.jpg')
         .backgroundColor('rgba(0,0,0,0)')
         .showAtmosphere(true)
         .atmosphereColor('#cbd5e1')
-        .atmosphereDaylightAlpha(0.1)
+        .atmosphereDaylightAlpha(0.2)
+        .showGraticules(true) // Professional strategic look
         .pointsData(nodesData)
         .pointColor('color')
         .pointRadius('size')
