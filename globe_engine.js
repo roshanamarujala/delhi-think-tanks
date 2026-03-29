@@ -65,8 +65,8 @@ function initGlobe() {
         .showGraticules(true) // Professional strategic look
         .pointsData(nodesData)
         .pointColor('color')
-        .pointRadius('size')
-        .pointAltitude(0.01)
+        .pointRadius(0.6)
+        .pointAltitude(0.02)
         .pointLabel(d => `
             <div class="globe-tooltip">
                 <div style="font-weight: 800; color: ${d.color}; margin-bottom: 4px;">${d.name}</div>
