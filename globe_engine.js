@@ -149,17 +149,18 @@ function initGlobe() {
 function handleGlobalNav(node) {
     if (!node || !node.element) return;
 
-    var controls = myGlobe.controls();
-    controls.autoRotate = false;
+    var scrollDelay = 0;
 
-    // Smooth transit to the exact node
-    myGlobe.pointOfView({ lat: node.lat, lng: node.lng, altitude: 1.0 }, 1200);
+    if (myGlobe) {
+        var controls = myGlobe.controls();
+        controls.autoRotate = false;
+        myGlobe.pointOfView({ lat: node.lat, lng: node.lng, altitude: 1.0 }, 1200);
+        scrollDelay = 1300;
+    }
 
     setTimeout(function() {
-        // Scroll into viewport accounting for sticky headers
         node.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        // Highlight the selected card prominently
         node.element.style.transition = 'all 0.5s ease';
         node.element.style.outline = '8px solid ' + node.color;
         node.element.style.boxShadow = '0 0 50px ' + node.color + '88';
@@ -171,9 +172,11 @@ function handleGlobalNav(node) {
             node.element.style.boxShadow = '';
             node.element.style.transform = '';
             node.element.style.zIndex = '';
-            controls.autoRotate = true;
+            if (myGlobe) {
+                myGlobe.controls().autoRotate = true;
+            }
         }, 4000);
-    }, 1300);
+    }, scrollDelay);
 }
 
 // Attach directly to window object to guarantee accessibility for the Discovery Mode button
