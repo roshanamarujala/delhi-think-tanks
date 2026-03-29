@@ -386,6 +386,14 @@
             letter-spacing: 0.05em;
         }
 
+        @media (max-width: 768px) {
+            .filter-bar {
+                position: relative;
+                top: auto;
+                z-index: 10;
+            }
+        }
+
         @media print {
             .filter-bar, .search-container, .metrics-grid { display: none; }
             body { background: white; padding: 0; }
