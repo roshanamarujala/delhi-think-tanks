@@ -179,19 +179,82 @@ function handleGlobalNav(node) {
     }, scrollDelay);
 }
 
-// Attach directly to window object to guarantee accessibility for the Discovery Mode button
-window.triggerRandomDiscovery = function() {
-    if (!nodesData || nodesData.length === 0) {
-        console.warn("Nodes not fully loaded yet.");
+/**
+ * triggerRandomDiscovery - selects a random think tank card and scrolls to it.
+ * Works in two modes:
+ *   1. If nodesData is populated (globe initialised), use handleGlobalNav for
+ *      the full globe animation + scroll experience.
+ *   2. Fallback: query .tt-card elements directly from the DOM so the button
+ *      always works even when the globe fails to initialise (e.g. CDN error).
+ */
+function triggerRandomDiscovery() {
+    // --- Mode 1: globe is ready, use node data for full experience ---
+    if (nodesData && nodesData.length > 0) {
+        var randomNode = nodesData[Math.floor(Math.random() * nodesData.length)];
+        if (randomNode && randomNode.element) {
+            // Make sure the card and its parent section are visible (search may
+            // have hidden them).
+            var parentRow = randomNode.element.closest('.domain-row');
+            if (parentRow && parentRow.style.display === 'none') {
+                parentRow.style.display = '';
+            }
+            if (randomNode.element.style.display === 'none') {
+                randomNode.element.style.display = '';
+            }
+            handleGlobalNav(randomNode);
+            return;
+        }
+    }
+
+    // --- Mode 2: DOM-only fallback (no globe required) ---
+    var allCards = Array.from(document.querySelectorAll('.tt-card'));
+    if (allCards.length === 0) {
+        console.warn('Discovery Mode: no .tt-card elements found.');
         return;
     }
-    var randomNode = nodesData[Math.floor(Math.random() * nodesData.length)];
-    handleGlobalNav(randomNode);
-};
+    var card = allCards[Math.floor(Math.random() * allCards.length)];
+
+    // Ensure the card and its parent section are visible.
+    var row = card.closest('.domain-row');
+    if (row && row.style.display === 'none') { row.style.display = ''; }
+    if (card.style.display === 'none') { card.style.display = 'flex'; }
+
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    card.style.transition = 'all 0.5s ease';
+    card.style.outline = '6px solid #1d4ed8';
+    card.style.boxShadow = '0 0 40px rgba(29,78,216,0.5)';
+    card.style.transform = 'scale(1.02)';
+    card.style.zIndex = '100';
+    setTimeout(function() {
+        card.style.outline = '';
+        card.style.boxShadow = '';
+        card.style.transform = '';
+        card.style.zIndex = '';
+    }, 3500);
+}
+
+// Expose on window for any external callers or console debugging.
+window.triggerRandomDiscovery = triggerRandomDiscovery;
+
+// Attach an explicit click listener as well so the button works even if the
+// inline onclick handler is somehow suppressed.
+function attachDiscoveryButton() {
+    var btn = document.querySelector('.discover-btn');
+    if (btn) {
+        btn.addEventListener('click', function() {
+            triggerRandomDiscovery();
+        });
+    }
+}
 
 // Robust bootstrapper covering various DOM states
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
     initGlobe();
+    attachDiscoveryButton();
 } else {
-    window.addEventListener('DOMContentLoaded', initGlobe);
+    window.addEventListener('DOMContentLoaded', function() {
+        initGlobe();
+        attachDiscoveryButton();
+    });
 }
