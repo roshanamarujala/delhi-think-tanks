@@ -66,8 +66,8 @@ html = replace_metric(html, 'Private / Independent', type_counts['private'])
 # Replace the text "191 verified institutions" in the header paragraph
 html = re.sub(r'<strong>\d+ verified institutions</strong>', f'<strong>{total_cards} verified institutions</strong>', html)
 # Replace "THE 190+ INSTITUTIONAL LIST" in subtitle
-html = re.sub(r'THE \d+\+ INSTITUTIONAL LIST', f'THE {total_cards}+ INSTITUTIONAL LIST', html) # Wait, it might be 180+ if it's 186. Let's make it 180+
-html = re.sub(r'190\+ institutions by name', '180+ institutions by name', html)
+html = re.sub(r'THE \d+\+ INSTITUTIONAL LIST', f'THE {total_cards} INSTITUTIONAL LIST', html)
+html = re.sub(r'Search \d+\+ institutions', f'Search {total_cards} institutions', html)
 
 # Replace domain badges
 # Let's find all domain badges and replace their content based on the section id they are in.
