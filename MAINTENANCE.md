@@ -14,16 +14,26 @@ The project is stored in your local workspace:
 Any changes you make to `index.html` will be reflected online once you push to GitHub.
 
 ### 1. Adding a New Think Tank
-Locate the relevant category section (e.g., `section-geo`) and paste a new card block:
+Locate the relevant category section (e.g., `section-geo`) and paste a new card block. Note the inclusion of the `.tt-social` block:
 ```html
 <div class="tt-card [category]-card">
+    <div class="tt-social">
+        <a href="LINKEDIN_URL" target="_blank" class="social-btn btn-lkn" title="LinkedIn">
+            <svg><use href="#icon-lkn"></use></svg>
+        </a>
+        <a href="TWITTER_URL" target="_blank" class="social-btn btn-twt" title="Twitter/X">
+            <svg><use href="#icon-twt"></use></svg>
+        </a>
+    </div>
     <div class="tt-header">
-        <a href="URL" class="tt-name">Institution Name</a>
+        <a href="HOME_URL" class="tt-name">Institution Name</a>
         <span class="tt-focus">Brief description of policy focus.</span>
     </div>
     <div class="tt-meta">📍 Location</div>
     <div class="tt-links">
-        <a href="URL" class="tt-link primary">Home</a>
+        <a href="HOME_URL" class="tt-link primary">Home</a>
+        <a href="EVENTS_URL" class="tt-link">Events</a>
+        <a href="CAREERS_URL" class="tt-link">Join</a>
     </div>
 </div>
 ```
@@ -38,6 +48,12 @@ Run this command in the terminal to go live:
 ```bash
 git add . && git commit -m "Update: [Description of change]" && git push origin main
 ```
+
+### 4. Social Media Verification Standard
+All new entries must have verified LinkedIn and Twitter (X) profiles.
+- **LinkedIn**: Use the official company page URL.
+- **Twitter (X)**: Use the official institutional handle.
+- **Icons**: Ensure the SVG `<use>` pattern is used (`#icon-lkn` and `#icon-twt`) to maintain performance.
 
 ---
 
@@ -68,3 +84,5 @@ Current verified counts for the **Ultimate Edition**:
 - **LAW** | Justice: 08
 - **ART** | Arts: 08
 **TOTAL: 153 Verified Institutions**
+
+_Note: All 153 institutions feature 100% verified social media integration (LinkedIn & Twitter/X) as of March 29, 2026._
