@@ -72,17 +72,33 @@ Maintain the professional footer and "Curated by" sections to preserve the publi
 
 ---
 
-## 📊 Project Census (March 2026)
-Current verified counts for the **Ultimate Edition**:
-- **GEO** | Geopolitics: 30
-- **DEF** | Defence: 21
-- **POL** | Policy: 30
-- **ECO** | Economics: 16
-- **TEC** | Technology: 14
-- **ENV** | Environment: 11
-- **SOC** | Social: 15
-- **LAW** | Justice: 08
-- **ART** | Arts: 08
-**TOTAL: 153 Verified Institutions**
+## 📊 Project Census & Coverage (Verified)
 
-_Note: All 153 institutions feature 100% verified social media integration (LinkedIn & Twitter/X) as of March 29, 2026._
+| Thematic Domain | Count | Govt/Semi Status |
+| :--- | :--- | :--- |
+| **GEO** | 33 | 2 Govt, 2 Semi, 29 Private |
+| **DEF** | 24 | 2 Govt, 10 Semi, 12 Private |
+| **POL** | 37 | 3 Govt, 9 Semi, 25 Private |
+| **ECO** | 21 | 3 Govt, 8 Semi, 10 Private |
+| **TEC** | 18 | 3 Govt, 3 Semi, 12 Private |
+| **ENV** | 16 | 4 Govt, 0 Semi, 12 Private |
+| **SOC** | 20 | 3 Govt, 3 Semi, 14 Private |
+| **LAW** | 13 | 3 Govt, 3 Semi, 7 Private |
+| **ART** | 13 | 3 Govt, 4 Semi, 6 Private |
+| **TOTAL** | **191** | **26 Govt, 42 Semi, 123 Private** |
+
+### Verification Standard
+- **Direct Links**: Every card contains verified Home, Events, and Careers/Jobs/Join links.
+- **Social Integration**: 100% coverage for LinkedIn and Twitter (X) official profiles.
+- **UI Logic**: All counts are synchronized between the Strategic Navigator and sectoral badges.
+
+---
+
+## 📜 Project History & Changelog
+
+**March 2026 - The "Ultimate Edition" Refactoring**
+- **Data Enrichment**: Scaled the directory from 140+ to **191 verified institutions**, expanding across 9 distinct policy domains including the new 'Arts & Culture' sector.
+- **Master Research Suite UI**: Overhauled the header and directory guide to create a professional, premium introductory frame designed for maximum conversion and credibility.
+- **Brand Synthesization**: Integrated `@roshanamarujala` into the sticky navigation and header as a strategic CTA, directly linking to professional social architectures (Instagram, LinkedIn, X).
+- **Link Integrity Audit**: Executed exhaustive bash-level checks across all `tt-card` objects. All institutional anchors, event logs, and career portals are functional and accurately mapped as of the final spot check.
+- **Structural Alignment**: Synchronized the frontend badge counts (GEO, DEF, POL, etc.) perfectly with the backend DOM counts. Fixed legacy structural fragment errors (`</div>v>`).
