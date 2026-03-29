@@ -57,9 +57,10 @@ The following artifacts have been "initialized" in your current workspace:
 
 ### 🏛️ Current State Summary
 The project was successfully completed with these key highlights:
-- **Scope**: Expanded from 56 to **100+ institutions** across 8 policy domains (Geopolitics, Defence, Policy, Economy, Tech, Environment, Social, and Law).
-- **Verification**: Sourced and validated deep links for **Careers/Vacancies** and **Events/Programs** for every entry.
-- **Design**: Implemented a premium, interactive HTML structure optimized for both web browsing and high-quality PDF printing.
+- **Scope**: Expanded to **153 verified institutions** across 9 policy domains (Geopolitics, Defence, Policy, Economics, Technology, Environment, Social, Justice, and Arts).
+- **Verification**: Sourced and validated deep links for **Careers/Vacancies** and **Events/Programs** for every entry; 100% link integrity.
+- **Design**: Implemented a premium, interactive HTML structure optimized for both web browsing and high-quality PDF printing, featuring a 'Strategic Directory Navigator'.
+- **Deployment**: Hosted on GitHub Pages at `https://roshanamarujala.github.io/delhi-think-tanks/`.
 
 How would you like to proceed? I can:
 1.  **Modify or append** more think tanks to specific sections.

@@ -53,3 +53,18 @@ If you start a new conversation with an AI, you don't need the old logs. The rep
 ## ✍️ Branding & Attribution
 **Official Handle**: @roshanamarujala
 Maintain the professional footer and "Curated by" sections to preserve the publishing authority of the document.
+
+---
+
+## 📊 Project Census (March 2026)
+Current verified counts for the **Ultimate Edition**:
+- **GEO** | Geopolitics: 30
+- **DEF** | Defence: 21
+- **POL** | Policy: 30
+- **ECO** | Economics: 16
+- **TEC** | Technology: 14
+- **ENV** | Environment: 11
+- **SOC** | Social: 15
+- **LAW** | Justice: 08
+- **ART** | Arts: 08
+**TOTAL: 153 Verified Institutions**
