@@ -76,16 +76,16 @@ Maintain the professional footer and "Curated by" sections to preserve the publi
 
 | Thematic Domain | Count | Govt/Semi Status |
 | :--- | :--- | :--- |
-| **GEO** | 33 | 2 Govt, 2 Semi, 29 Private |
-| **DEF** | 24 | 2 Govt, 10 Semi, 12 Private |
-| **POL** | 37 | 3 Govt, 9 Semi, 25 Private |
-| **ECO** | 21 | 3 Govt, 8 Semi, 10 Private |
-| **TEC** | 18 | 3 Govt, 3 Semi, 12 Private |
-| **ENV** | 16 | 4 Govt, 0 Semi, 12 Private |
-| **SOC** | 20 | 3 Govt, 3 Semi, 14 Private |
-| **LAW** | 13 | 3 Govt, 3 Semi, 7 Private |
-| **ART** | 13 | 3 Govt, 4 Semi, 6 Private |
-| **TOTAL** | **191** | **26 Govt, 42 Semi, 123 Private** |
+| **GEO** | 32 | 2 Govt, 2 Semi, 28 Private |
+| **DEF** | 23 | 2 Govt, 10 Semi, 11 Private |
+| **POL** | 36 | 3 Govt, 8 Semi, 25 Private |
+| **ECO** | 20 | 3 Govt, 8 Semi, 9 Private |
+| **TEC** | 17 | 2 Govt, 4 Semi, 11 Private |
+| **ENV** | 15 | 4 Govt, 0 Semi, 11 Private |
+| **SOC** | 19 | 4 Govt, 0 Semi, 15 Private |
+| **LAW** | 12 | 2 Govt, 4 Semi, 6 Private |
+| **ART** | 12 | 3 Govt, 5 Semi, 4 Private |
+| **TOTAL** | **186** | **25 Govt, 41 Semi, 120 Private** |
 
 ### Verification Standard
 - **Direct Links**: Every card contains verified Home, Events, and Careers/Jobs/Join links.
@@ -97,8 +97,9 @@ Maintain the professional footer and "Curated by" sections to preserve the publi
 ## 📜 Project History & Changelog
 
 **March 2026 - The "Ultimate Edition" Refactoring**
-- **Data Enrichment**: Scaled the directory from 140+ to **191 verified institutions**, expanding across 9 distinct policy domains including the new 'Arts & Culture' sector.
+- **Data Enrichment**: Scaled the directory from 140+ to **186 verified institutions**, expanding across 9 distinct policy domains including the new 'Arts & Culture' sector.
 - **Master Research Suite UI**: Overhauled the header and directory guide to create a professional, premium introductory frame designed for maximum conversion and credibility.
 - **Brand Synthesization**: Integrated `@roshanamarujala` into the sticky navigation and header as a strategic CTA, directly linking to professional social architectures (Instagram, LinkedIn, X).
 - **Link Integrity Audit**: Executed exhaustive bash-level checks across all `tt-card` objects. All institutional anchors, event logs, and career portals are functional and accurately mapped as of the final spot check.
 - **Structural Alignment**: Synchronized the frontend badge counts (GEO, DEF, POL, etc.) perfectly with the backend DOM counts. Fixed legacy structural fragment errors (`</div>v>`).
+- **Leadership Data Integrity Audit**: Eliminated generic leadership placeholders for 10 entries across the document (e.g. replaced "Strategic Thinkers Group" and "Board of Directors" with accurate manual verification endpoints) to ensure zero data pollution in the metadata blocks.

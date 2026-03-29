@@ -1,0 +1,932 @@
+[
+  {
+    "name": "ORCA (Research on China & Asia)",
+    "founder": "Eerishika Pankaj",
+    "head": "Eerishika Pankaj (Director)"
+  },
+  {
+    "name": "Usanas Foundation",
+    "founder": "Dr. Abhinav Pandya",
+    "head": "Dr. Abhinav Pandya (Founder & CEO)"
+  },
+  {
+    "name": "RIS (MEA Think Tank)",
+    "founder": "Ministry of External Affairs",
+    "head": "Prof. Sachin Chaturvedi (DG)"
+  },
+  {
+    "name": "Observer Research Foundation (ORF)",
+    "founder": "R. K. Mishra",
+    "head": "Samir Saran (President)"
+  },
+  {
+    "name": "Indian Council of World Affairs (ICWA)",
+    "founder": "Sir Tej Bahadur Sapru",
+    "head": "Amb. Vijay Thakur Singh (DG)"
+  },
+  {
+    "name": "Vivekananda Int'l Foundation (VIF)",
+    "founder": "Ajit Doval",
+    "head": "Dr. Arvind Gupta (Director)"
+  },
+  {
+    "name": "Delhi Policy Group (DPG)",
+    "founder": "K. S. Bajpai",
+    "head": "Amb. Hemant Krishan Singh (DG)"
+  },
+  {
+    "name": "The Geostrata",
+    "founder": "Shantanu Sharma",
+    "head": "Shantanu Sharma (Founder & CEO)"
+  },
+  {
+    "name": "Carnegie India",
+    "founder": "Carnegie Endowment",
+    "head": "Rudra Chaudhuri (Director)"
+  },
+  {
+    "name": "Global Policy Insights (GPI)",
+    "founder": "Arpit Chaturvedi",
+    "head": "Arpit Chaturvedi (CEO)"
+  },
+  {
+    "name": "CPRG India",
+    "founder": "Ramanand Pandey",
+    "head": "Ramanand Pandey (Director)"
+  },
+  {
+    "name": "South Asia Analysis Group (SAAG)",
+    "founder": "S. Chandrasekharan",
+    "head": "S. Chandrasekharan (Director)"
+  },
+  {
+    "name": "Foreign Policy Research Centre",
+    "founder": "Dr. Mahendra Gaur",
+    "head": "Dr. Mahendra Gaur (Director)"
+  },
+  {
+    "name": "Indian Strategic Studies Forum",
+    "founder": "Abhishek Jha",
+    "head": "Abhishek Jha (Director)"
+  },
+  {
+    "name": "GCTC (New Delhi)",
+    "founder": "Dr. R.K. Mishra",
+    "head": "Acharya Shailesh (DG)"
+  },
+  {
+    "name": "Takshashila Institution",
+    "founder": "Nitin Pai",
+    "head": "Nitin Pai (Director)"
+  },
+  {
+    "name": "ISIL (Int'l Law & IR)",
+    "founder": "V. K. Krishna Menon",
+    "head": "Pravin Parekh (President)"
+  },
+  {
+    "name": "Centre for Escalation of Peace",
+    "founder": "S.K. Misra / Munjal Family",
+    "head": "Arun Kapur (Director)"
+  },
+  {
+    "name": "IPCS (Peace & Conflict)",
+    "founder": "Maj. Gen. Dipankar Banerjee",
+    "head": "Maj. Gen. Dipankar Banerjee (Founder)"
+  },
+  {
+    "name": "Gateway House Delhi",
+    "founder": "Manjeet Kripalani",
+    "head": "Manjeet Kripalani (Exec. Director)"
+  },
+  {
+    "name": "SNS Strategic News Service",
+    "founder": "Nitin Gokhale",
+    "head": "Nitin Gokhale (Editor-in-Chief)"
+  },
+  {
+    "name": "StratNews Global",
+    "founder": "Nitin Gokhale",
+    "head": "Nitin Gokhale (Editor-in-Chief)"
+  },
+  {
+    "name": "Red Lantern Analytica",
+    "founder": "Abhishek Darbey",
+    "head": "Abhishek Darbey (Director)"
+  },
+  {
+    "name": "India Foundation",
+    "founder": "Ram Madhav",
+    "head": "Shaurya Doval (Director)"
+  },
+  {
+    "name": "Ananta Centre",
+    "founder": "Jamshyd Godrej",
+    "head": "Kiran Pasricha (CEO)"
+  },
+  {
+    "name": "CSDR (Indo-Pacific focus)",
+    "founder": "Happymon Jacob",
+    "head": "Happymon Jacob (Founder)"
+  },
+  {
+    "name": "Policy Perspectives Foundation (PPF)",
+    "founder": "R. K. Ohri",
+    "head": "Syed Ata Hasnain (President)"
+  },
+  {
+    "name": "C-NES (North East Studies)",
+    "founder": "Sanjoy Hazarika",
+    "head": "Sanjoy Hazarika (Managing Trustee)"
+  },
+  {
+    "name": "South Asia Monitor",
+    "founder": "C. Uday Bhaskar",
+    "head": "C. Uday Bhaskar (Director)"
+  },
+  {
+    "name": "SPMRF (Strategic)",
+    "founder": "BJP / RSS Trust",
+    "head": "Dr. Anirban Ganguly (Director)"
+  },
+  {
+    "name": "PP&R Division, MEA",
+    "founder": "Ministry of External Affairs",
+    "head": "Joint Secretary (PP&R)"
+  },
+  {
+    "name": "NSAB (Security Advisory)",
+    "founder": "Government of India",
+    "head": "NSA (Convener)"
+  },
+  {
+    "name": "MP-IDSA (National Defence)",
+    "founder": "Ministry of Defence",
+    "head": "Sujan R. Chinoy (Director General)"
+  },
+  {
+    "name": "BharatShakti.in",
+    "founder": "Nitin Gokhale",
+    "head": "Nitin Gokhale (Founder)"
+  },
+  {
+    "name": "CAPS (Air Power Studies)",
+    "founder": "Indian Air Force",
+    "head": "Air Marshal Anil Chopra (DG)"
+  },
+  {
+    "name": "CLAWS (Land Warfare)",
+    "founder": "Indian Army",
+    "head": "Lt Gen Dr. S.S. Mahal (DG)"
+  },
+  {
+    "name": "NMF (Maritime Foundation)",
+    "founder": "Indian Navy",
+    "head": "Vice Admiral Pradeep Chauhan (DG)"
+  },
+  {
+    "name": "CENJOWS (Tri-Services)",
+    "founder": "Ministry of Defence",
+    "head": "Lt Gen Sunil Srivastava (Director)"
+  },
+  {
+    "name": "USI (United Service Institution)",
+    "founder": "Col Sir Charles MacGregor",
+    "head": "Maj Gen BK Sharma (Director)"
+  },
+  {
+    "name": "Force Analysis",
+    "founder": "Pravin Sawhney",
+    "head": "Pravin Sawhney (Editor)"
+  },
+  {
+    "name": "Delhi Defence Review",
+    "founder": "Saurav Jha",
+    "head": "Saurav Jha (Chief Editor)"
+  },
+  {
+    "name": "SATP (Conflict Mgmt)",
+    "founder": "K. P. S. Gill",
+    "head": "Ajai Sahni (Executive Director)"
+  },
+  {
+    "name": "ICS (China Defence Focus)",
+    "founder": "Prof. Manoranjan Mohanty",
+    "head": "Prof. Alka Acharya (Honorary Director)"
+  },
+  {
+    "name": "IPCS Nuclear Focus",
+    "founder": "Dipankar Banerjee",
+    "head": "Manpreet Sethi (Distinguished Fellow)"
+  },
+  {
+    "name": "Indian Military Review (IMR)",
+    "founder": "Maj Gen Ravi Arora",
+    "head": "Maj Gen Ravi Arora (Chief Editor)"
+  },
+  {
+    "name": "CENREC (Regional Conflict)",
+    "founder": "N/A",
+    "head": "N/A"
+  },
+  {
+    "name": "Defence Research & Analysis",
+    "founder": "Independent Analysts",
+    "head": "Editorial Board"
+  },
+  {
+    "name": "USI CAFHR (Military History)",
+    "founder": "USI Trust",
+    "head": "Sqdn Ldr Rana TS Chhina (Director)"
+  },
+  {
+    "name": "NMF Blue Economy",
+    "founder": "Indian Navy",
+    "head": "Cmde Abhay Kumar Singh (Head)"
+  },
+  {
+    "name": "Aerospace Policy Hub",
+    "founder": "CAPS",
+    "head": "Research Board"
+  },
+  {
+    "name": "StratNews Defence",
+    "founder": "Nitin Gokhale",
+    "head": "Nitin Gokhale (Editor-in-Chief)"
+  },
+  {
+    "name": "Society for Policy Studies (SPS)",
+    "founder": "C. Uday Bhaskar",
+    "head": "C. Uday Bhaskar (Director)"
+  },
+  {
+    "name": "KIIPS (Indo-Pacific Studies)",
+    "founder": "Chintamani Mahapatra",
+    "head": "Prof. Chintamani Mahapatra (Chairman)"
+  },
+  {
+    "name": "BPR&D (Police Research)",
+    "founder": "Ministry of Home Affairs",
+    "head": "Balaji Srivastava (Director General)"
+  },
+  {
+    "name": "NSCS (Security Council)",
+    "founder": "Government of India",
+    "head": "Ajit Doval (NSA)"
+  },
+  {
+    "name": "Centre for Policy Research (CPR)",
+    "founder": "V. A. Pai Panandiker",
+    "head": "Yamini Aiyar (President & CE)"
+  },
+  {
+    "name": "NIUA (Urban Excellence)",
+    "founder": "Ministry of Housing",
+    "head": "Hitesh Vaidya (Director)"
+  },
+  {
+    "name": "PRS Legislative Research",
+    "founder": "C. V. Madhukar",
+    "head": "M. R. Madhavan (President)"
+  },
+  {
+    "name": "ADR (Democratic Reform)",
+    "founder": "Trilochan Sastry",
+    "head": "Maj. Gen. Anil Verma (Head)"
+  },
+  {
+    "name": "Centre for Civil Society",
+    "founder": "Parth J. Shah",
+    "head": "Parth J. Shah (Founder & President)"
+  },
+  {
+    "name": "SPRF India",
+    "founder": "Rishabh Malhotra",
+    "head": "Rishabh Malhotra (Director)"
+  },
+  {
+    "name": "IMPRI (Policy Research)",
+    "founder": "Simi Mehta",
+    "head": "Dr. Simi Mehta (CEO)"
+  },
+  {
+    "name": "PPRC (Public Policy Centre)",
+    "founder": "Vinay Sahasrabuddhe",
+    "head": "Dr. Vinay Sahasrabuddhe (Director)"
+  },
+  {
+    "name": "CBGA India (Budgets)",
+    "founder": "NCAS initiative",
+    "head": "Subrat Das (Executive Director)"
+  },
+  {
+    "name": "IIIDEM (Electon Mgmt)",
+    "founder": "Election Commission of India",
+    "head": "Dharmendra Sharma (Director General)"
+  },
+  {
+    "name": "IIDS (Social Exclusion)",
+    "founder": "S.K. Thorat",
+    "head": "Prof. S.K. Thorat (Chairman)"
+  },
+  {
+    "name": "Global Governance Initiative (GGI)",
+    "founder": "Shatakshi Sharma & Naman Shrivastava",
+    "head": "Shatakshi Sharma (Co-CEO)"
+  },
+  {
+    "name": "Janaagraha (Delhi City)",
+    "founder": "Ramesh Ramanathan",
+    "head": "Srikanth Viswanathan (CEO)"
+  },
+  {
+    "name": "SOLPO (Policy Research)",
+    "founder": "Sanjay Sen",
+    "head": "Sanjay Sen (Director)"
+  },
+  {
+    "name": "Public Policy India",
+    "founder": "Yash Agarwal & Michelle Patrick",
+    "head": "Yash Agarwal"
+  },
+  {
+    "name": "IGPP (Governance & Policy)",
+    "founder": "Prof. Ashwani Kumar",
+    "head": "Sanjeev Kumar (Director)"
+  },
+  {
+    "name": "Accountability Initiative (CPR)",
+    "founder": "Yamini Aiyar",
+    "head": "Avani Kapur (Director)"
+  },
+  {
+    "name": "NITI Aayog (Apex House)",
+    "founder": "Government of India",
+    "head": "B.V.R. Subrahmanyam (CEO)"
+  },
+  {
+    "name": "Civis India",
+    "founder": "Antaraa Vasudev",
+    "head": "Antaraa Vasudev (Founder)"
+  },
+  {
+    "name": "CIPR (Independent Policy)",
+    "founder": "N/A",
+    "head": "N/A"
+  },
+  {
+    "name": "ISPP (Public Policy)",
+    "founder": "Parth J. Shah & Luis Miranda",
+    "head": "Dr. Sanjaya Baru (Founder Dean)"
+  },
+  {
+    "name": "National Foundation for India (NFI)",
+    "founder": "C. Subramaniam",
+    "head": "Biraj Patnaik (Executive Director)"
+  },
+  {
+    "name": "IIPA (Public Administration)",
+    "founder": "Jawaharlal Nehru",
+    "head": "S.N. Tripathi (Director General)"
+  },
+  {
+    "name": "Samagra Governance",
+    "founder": "Gaurav Goel",
+    "head": "Gaurav Goel (Founder & CEO)"
+  },
+  {
+    "name": "Swaniti Initiative",
+    "founder": "Rwitwika Bhattacharya",
+    "head": "Rwitwika Bhattacharya (CEO)"
+  },
+  {
+    "name": "The Quantum Hub (TQH)",
+    "founder": "Rohit Kumar",
+    "head": "Rohit Kumar (Founding Partner)"
+  },
+  {
+    "name": "Koan Advisory Group",
+    "founder": "Vivan Sharan",
+    "head": "Vivan Sharan (Partner)"
+  },
+  {
+    "name": "DDC Delhi (Governance)",
+    "founder": "Govt of NCT of Delhi",
+    "head": "Jasmine Shah (Vice Chairperson)"
+  },
+  {
+    "name": "The Dialogue (Tech Policy)",
+    "founder": "Kazimuddin Ahmed",
+    "head": "Kazimuddin Ahmed (Director)"
+  },
+  {
+    "name": "NCAS India (Social Watch)",
+    "founder": "Josantony Joseph",
+    "head": "N/A"
+  },
+  {
+    "name": "NILERD (Labour Policy)",
+    "founder": "Planning Commission",
+    "head": "Dr. K. J. Joseph (Director)"
+  },
+  {
+    "name": "NCERT (Edu Research)",
+    "founder": "Min of Education",
+    "head": "Prof. Dinesh Prasad Saklani (Director)"
+  },
+  {
+    "name": "NIEPA (Edu Planning)",
+    "founder": "Min of Education",
+    "head": "Prof. Shashikala Wanjari (VC)"
+  },
+  {
+    "name": "NIDM (Disaster Mgmt)",
+    "founder": "Ministry of Home Affairs",
+    "head": "Rajendra Singh (Executive Director)"
+  },
+  {
+    "name": "Quality Council of India",
+    "founder": "DPIIT",
+    "head": "JaxsAY Shah (Chairperson)"
+  },
+  {
+    "name": "NIHFW (Health/Family)",
+    "founder": "Min of Health",
+    "head": "Dr. Nanthini Subbiah (Director)"
+  },
+  {
+    "name": "NCAER (National Economic)",
+    "founder": "Pt. Jawaharlal Nehru",
+    "head": "Dr. Poonam Gupta (DG)"
+  },
+  {
+    "name": "ICRIER (Global Trade)",
+    "founder": "K. B. Lall",
+    "head": "Deepak Mishra (Director)"
+  },
+  {
+    "name": "NIPFP (Public Finance)",
+    "founder": "Ministry of Finance",
+    "head": "Pinaki Chakraborty (Director)"
+  },
+  {
+    "name": "CSEP (Brookings India)",
+    "founder": "Vikram Singh Mehta",
+    "head": "Rakesh Mohan (President)"
+  },
+  {
+    "name": "IEG (Economic Growth)",
+    "founder": "V. K. R. V. Rao",
+    "head": "Prof. Chetan Ghate (Director)"
+  },
+  {
+    "name": "Pahle India Foundation",
+    "founder": "Dr. Rajiv Kumar",
+    "head": "Dr. Rajiv Kumar (Chairman)"
+  },
+  {
+    "name": "CUTS International",
+    "founder": "Pradeep S. Mehta",
+    "head": "Pradeep S. Mehta (Secretary General)"
+  },
+  {
+    "name": "Inclusion Economics",
+    "founder": "Rohini Pande",
+    "head": "Rohini Pande (Faculty Director)"
+  },
+  {
+    "name": "ISID (Industrial Dev)",
+    "founder": "Prof. S.K. Goyal",
+    "head": "Prof. Nagesh Kumar (Director)"
+  },
+  {
+    "name": "IIFT (Trade Policy)",
+    "founder": "Ministry of Commerce",
+    "head": "Prof. Rakesh Mohan Joshi (VC)"
+  },
+  {
+    "name": "IGC India (Growth Centre)",
+    "founder": "LSE / Oxford",
+    "head": "Pronab Sen (Country Director)"
+  },
+  {
+    "name": "DBE (Business Econ)",
+    "founder": "Delhi University / V.K.R.V. Rao",
+    "head": "Prof. V.K. Kaul (Head)"
+  },
+  {
+    "name": "SDE (Sustainable Economics)",
+    "founder": "Sushil Kumar Sharma",
+    "head": "Sushil Kumar Sharma (CEO)"
+  },
+  {
+    "name": "Agri Economics Research",
+    "founder": "Ministry of Agriculture",
+    "head": "Dr. Usha Tuteja (Director)"
+  },
+  {
+    "name": "ICRIER Digital focus",
+    "founder": "ICRIER",
+    "head": "Rajat Kathuria (Lead)"
+  },
+  {
+    "name": "CPD (Policy Design)",
+    "founder": "ATREE",
+    "head": "Dr. Abi Tamim Vanak (Director)"
+  },
+  {
+    "name": "EAC-PM (Economics)",
+    "founder": "Government of India",
+    "head": "Dr. Bibek Debroy (Chairman)"
+  },
+  {
+    "name": "CCI (Competition)",
+    "founder": "Government of India",
+    "head": "Ravneet Kaur (Chairperson)"
+  },
+  {
+    "name": "ICAR (Agri Research)",
+    "founder": "Government of India",
+    "head": "Dr. Himanshu Pathak (DG)"
+  },
+  {
+    "name": "NSO (Statistics)",
+    "founder": "Government of India",
+    "head": "Secretary, MoSPI"
+  },
+  {
+    "name": "Esya Centre",
+    "founder": "Vivan Sharan",
+    "head": "Vivan Sharan (Director)"
+  },
+  {
+    "name": "Aapti Institute",
+    "founder": "Sarayu Natarajan",
+    "head": "Sarayu Natarajan (Founder)"
+  },
+  {
+    "name": "The Quantum Hub (TQH)",
+    "founder": "Rohit Kumar",
+    "head": "Rohit Kumar (Founding Partner)"
+  },
+  {
+    "name": "IFF (Internet Freedom)",
+    "founder": "Apar Gupta",
+    "head": "Prateek Waghre (Executive Director)"
+  },
+  {
+    "name": "MediaNama Policy",
+    "founder": "Nikhil Pahwa",
+    "head": "Nikhil Pahwa (Founder & Editor)"
+  },
+  {
+    "name": "CIS (Digital Policy)",
+    "founder": "Sunil Abraham",
+    "head": "Pranesh Prakash (Director)"
+  },
+  {
+    "name": "Pranava Institute",
+    "founder": "Sai Nivedita",
+    "head": "Sai Nivedita (Founder)"
+  },
+  {
+    "name": "CCG-NLU Delhi",
+    "founder": "NLU Delhi / Chinmayi Arun",
+    "head": "Dr. Daniel Mathew (Director)"
+  },
+  {
+    "name": "India Smart Grid Forum",
+    "founder": "Ministry of Power",
+    "head": "Reji Kumar Pillai (President)"
+  },
+  {
+    "name": "Ikigai Law (Policy)",
+    "founder": "Anirudh Rastogi",
+    "head": "Anirudh Rastogi (Founder)"
+  },
+  {
+    "name": "IndiaAI Portal",
+    "founder": "MeitY / NASSCOM",
+    "head": "Abhishek Singh (CEO)"
+  },
+  {
+    "name": "DSCI (Data Security)",
+    "founder": "NASSCOM",
+    "head": "Vinayak Godse (CEO)"
+  },
+  {
+    "name": "Koan Advisory Group",
+    "founder": "Vivan Sharan",
+    "head": "Vivan Sharan (Partner)"
+  },
+  {
+    "name": "The Dialogue",
+    "founder": "Founding Members",
+    "head": "Director / Head"
+  },
+  {
+    "name": "STPI (Tech Policy)",
+    "founder": "Ministry of Electronics & IT",
+    "head": "Arvind Kumar (DG)"
+  },
+  {
+    "name": "TIFAC (Tech Vision)",
+    "founder": "Department of Science & Tech",
+    "head": "Prof. Pradeep Srivastava (ED)"
+  },
+  {
+    "name": "MeitY (R&D Policy)",
+    "founder": "Government of India",
+    "head": "Alkesh Kumar Sharma (Secretary)"
+  },
+  {
+    "name": "CSE India (Science & Env)",
+    "founder": "Anil Agarwal",
+    "head": "Sunita Narain (Director General)"
+  },
+  {
+    "name": "TERI (Resource Institute)",
+    "founder": "Darbari Seth",
+    "head": "Dr. Vibha Dhawan (DG)"
+  },
+  {
+    "name": "CEEW India",
+    "founder": "Dr. Arunabha Ghosh",
+    "head": "Dr. Arunabha Ghosh (CEO)"
+  },
+  {
+    "name": "LIFE (Environmental Law)",
+    "founder": "Ritwick Dutta",
+    "head": "Ritwick Dutta (Founder)"
+  },
+  {
+    "name": "iFOREST",
+    "founder": "Chandra Bhushan",
+    "head": "Chandra Bhushan (President & CEO)"
+  },
+  {
+    "name": "Shakti Foundation",
+    "founder": "Philanthropic Collaborative",
+    "head": "Anshu Bharadwaj (CEO)"
+  },
+  {
+    "name": "WRI India (New Delhi)",
+    "founder": "World Resources Institute",
+    "head": "Madhav Pai (CEO)"
+  },
+  {
+    "name": "Toxics Link",
+    "founder": "Ravi Agarwal",
+    "head": "Ravi Agarwal (Director)"
+  },
+  {
+    "name": "Chintan Environmental",
+    "founder": "Bharati Chaturvedi",
+    "head": "Bharati Chaturvedi (Director)"
+  },
+  {
+    "name": "Vasudha Foundation",
+    "founder": "Srinivas Krishnaswamy",
+    "head": "Srinivas Krishnaswamy (CEO)"
+  },
+  {
+    "name": "DA (Dev Alternatives)",
+    "founder": "Ashok Khosla",
+    "head": "Ashok Khosla (Chairman)"
+  },
+  {
+    "name": "CPCB (Pollution Board)",
+    "founder": "Government of India",
+    "head": "Tanmay Kumar (Chairman)"
+  },
+  {
+    "name": "MNRE (Renewable R&D)",
+    "founder": "Government of India",
+    "head": "Bhupinder Singh Bhalla (Secretary)"
+  },
+  {
+    "name": "DPCC (Pollution)",
+    "founder": "Govt of NCT of Delhi",
+    "head": "Dr. K.S. Jayachandran (Member Sec.)"
+  },
+  {
+    "name": "FSI (Delhi Hub)",
+    "founder": "MoEFCC",
+    "head": "Anoop Singh (DG)"
+  },
+  {
+    "name": "PHFI India (Public Health)",
+    "founder": "Dr. K. Srinath Reddy",
+    "head": "Prof. Sanjay Zodpey (President)"
+  },
+  {
+    "name": "One Health Trust",
+    "founder": "Ramanan Laxminarayan",
+    "head": "Ramanan Laxminarayan (President)"
+  },
+  {
+    "name": "CSR (Gender Rights)",
+    "founder": "Dr. Ranjana Kumari",
+    "head": "Dr. Ranjana Kumari (Director)"
+  },
+  {
+    "name": "CCDC India",
+    "founder": "Health Experts",
+    "head": "Dr. D Prabhakaran (Executive Director)"
+  },
+  {
+    "name": "CSDS Delhi",
+    "founder": "Rajni Kothari",
+    "head": "Awadhendra Sharan (Director)"
+  },
+  {
+    "name": "Population Council Delhi",
+    "founder": "John D. Rockefeller III",
+    "head": "Niranjan Saggurti (Director)"
+  },
+  {
+    "name": "Mobile Creches Policy",
+    "founder": "Meera Mahadevan",
+    "head": "Sumitra Mishra (Executive Director)"
+  },
+  {
+    "name": "CRY Policy Research",
+    "founder": "Rippan Kapur",
+    "head": "Puja Marwaha (CEO)"
+  },
+  {
+    "name": "Helpage Policy Hub",
+    "founder": "Jackson Cole",
+    "head": "Rohit Prasad (CEO)"
+  },
+  {
+    "name": "CFAR (Advocacy Research)",
+    "founder": "Akhila Sivadas",
+    "head": "Akhila Sivadas (Executive Director)"
+  },
+  {
+    "name": "Pratham Education Foundation",
+    "founder": "Madhav Chavan",
+    "head": "Rukmini Banerji (CEO)"
+  },
+  {
+    "name": "J-PAL South Asia",
+    "founder": "Abhijit Banerjee / Esther Duflo",
+    "head": "Shobhini Mukerji (Executive Director)"
+  },
+  {
+    "name": "Dasra (Strategic Philanthropy)",
+    "founder": "Neera Nundy / Deval Sanghavi",
+    "head": "Neera Nundy (Co-Founder)"
+  },
+  {
+    "name": "Central Square Foundation",
+    "founder": "Ashish Dhawan",
+    "head": "Ashish Dhawan (Founder & Chairman)"
+  },
+  {
+    "name": "Indus Action",
+    "founder": "Tarun Cherukuri",
+    "head": "Tarun Cherukuri (CEO)"
+  },
+  {
+    "name": "ICMR (Medical Research)",
+    "founder": "Government of India",
+    "head": "Dr. Rajiv Bahl (DG)"
+  },
+  {
+    "name": "AYUSH (Research)",
+    "founder": "Government of India",
+    "head": "Vaidya Rajesh Kotecha (Secretary)"
+  },
+  {
+    "name": "NCPCR (Child Rights)",
+    "founder": "Government of India",
+    "head": "Priyank Kanoongo (Chairperson)"
+  },
+  {
+    "name": "NCW (Women Policy)",
+    "founder": "Government of India",
+    "head": "Rekha Sharma (Chairperson)"
+  },
+  {
+    "name": "Vidhi Centre for Legal Policy",
+    "founder": "Arghya Sengupta",
+    "head": "Arghya Sengupta (Research Director)"
+  },
+  {
+    "name": "Daksh (Delhi Central)",
+    "founder": "Harish Narasappa",
+    "head": "Harish Narasappa (Co-Founder)"
+  },
+  {
+    "name": "SOLPO (Legal Research)",
+    "founder": "Founding Members",
+    "head": "Director / Head"
+  },
+  {
+    "name": "ISIL",
+    "founder": "V. K. Krishna Menon",
+    "head": "Pravin Parekh (President)"
+  },
+  {
+    "name": "LPRS (Legal & Policy)",
+    "founder": "N/A",
+    "head": "N/A"
+  },
+  {
+    "name": "Indian Law Institute",
+    "founder": "Govt of India / SC",
+    "head": "Prof. Manoj Kumar Sinha (Director)"
+  },
+  {
+    "name": "NLU Delhi Policy Centers",
+    "founder": "Govt of NCT Delhi",
+    "head": "Prof. G.S. Bajpai (Vice Chancellor)"
+  },
+  {
+    "name": "JGU Public Law Hub",
+    "founder": "Naveen Jindal",
+    "head": "Prof. C. Raj Kumar (VC)"
+  },
+  {
+    "name": "Law Commission of India",
+    "founder": "Government of India",
+    "head": "Justice Ritu Raj Awasthi (Chairperson)"
+  },
+  {
+    "name": "BCI (Legal R&D)",
+    "founder": "Advocates Act",
+    "head": "Manan Kumar Mishra (Chairman)"
+  },
+  {
+    "name": "NJ Academy (Delhi Hub)",
+    "founder": "Supreme Court of India",
+    "head": "Justice A.P. Sahi (Director)"
+  },
+  {
+    "name": "DOJ (Policy Division)",
+    "founder": "Ministry of Law",
+    "head": "Secretary, Department of Justice"
+  },
+  {
+    "name": "INTACH (National Trust)",
+    "founder": "Pupul Jayakar",
+    "head": "Maj. Gen. L.K. Gupta (Chairman)"
+  },
+  {
+    "name": "IGNCA (Arts Centre)",
+    "founder": "Rajiv Gandhi",
+    "head": "Dr. Sachidanand Joshi (Member Secretary)"
+  },
+  {
+    "name": "CCRT (Cultural Training)",
+    "founder": "Dr. Kapila Vatsyayan",
+    "head": "Rishi Vashist (Director)"
+  },
+  {
+    "name": "Sanskriti Foundation",
+    "founder": "O. P. Jain",
+    "head": "O. P. Jain (Founder & President)"
+  },
+  {
+    "name": "IIC (International Research)",
+    "founder": "C. D. Deshmukh",
+    "head": "K.N. Shrivastava (Director)"
+  },
+  {
+    "name": "Sahapedia",
+    "founder": "Dr. Sudha Gopalakrishnan",
+    "head": "Dr. Sudha Gopalakrishnan (Executive Director)"
+  },
+  {
+    "name": "CASP (Artistic Practice)",
+    "founder": "Amrita Gupta & Parul",
+    "head": "Amrita Gupta (Director)"
+  },
+  {
+    "name": "Heritage Policy Division",
+    "founder": "Ministry of Culture",
+    "head": "Secretary (Culture)"
+  },
+  {
+    "name": "PMML (Research Library)",
+    "founder": "Government of India",
+    "head": "Nripendra Misra (Chairman)"
+  },
+  {
+    "name": "Sahitya Akademi Policy",
+    "founder": "Government of India",
+    "head": "Madhav Kaushik (President)"
+  },
+  {
+    "name": "National Museum (Res)",
+    "founder": "Ministry of Culture",
+    "head": "B.R. Mani (Director General)"
+  },
+  {
+    "name": "National Archives (Policy)",
+    "founder": "Government of India",
+    "head": "Chandan Sinha (Director General)"
+  }
+]
