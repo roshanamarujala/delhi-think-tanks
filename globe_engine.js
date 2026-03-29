@@ -1,6 +1,6 @@
 /**
- * Delhi Think Tanks 3D Strategic Globe Engine - VECTOR EDITION v5
- * Zero-Texture, High-Contrast Strategic Visualization
+ * Delhi Think Tanks 3D Strategic Globe Engine - PREMIUM EDITION v6
+ * High-Fidelity Textured Visualization & Flawless Interactivity
  */
 
 let myGlobe;
@@ -39,8 +39,8 @@ function initGlobe() {
             if (card.classList.contains(cls)) { color = hex; break; }
         }
 
-        // Concentric distribution around India
-        const spread = 4.0; 
+        // Expanded concentric distribution for better node visibility and clickability
+        const spread = 15.0;
         return {
             lat: DELHI_COORDS.lat + (Math.random() - 0.5) * spread,
             lng: DELHI_COORDS.lng + (Math.random() - 0.5) * spread,
@@ -53,24 +53,29 @@ function initGlobe() {
 
     console.log(`Globe Engine: Mapping ${nodesData.length} Strategic Nodes.`);
 
-    // 2. VECTOR RENDER
+    // 2. PREMIUM TEXTURED RENDER
     myGlobe = Globe()(container)
+        .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+        .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
         .backgroundColor('rgba(0,0,0,0)')
-        .globeColor('#0f172a') // SOLID NAVY - NO TEXTURE DEPENDENCY
         .showAtmosphere(true)
         .atmosphereColor('#3b82f6')
-        .atmosphereDaylightAlpha(0.3)
+        .atmosphereDaylightAlpha(0.2)
         .showGraticules(true)
         .pointsData(nodesData)
         .pointColor('color')
-        .pointRadius(1.2)
-        .pointAltitude(0.12) // High visibility
+        .pointRadius(0.8)
+        .pointAltitude(0.05)
+        .pointResolution(32)
         .pointLabel(d => `
             <div class="globe-tooltip">
                 <div style="font-weight: 800; color: ${d.color}; border-bottom: 2px solid ${d.color}44; padding-bottom: 4px; margin-bottom: 6px;">${d.name}</div>
                 <div style="font-size: 0.8rem; color: #cbd5e1;">${d.focus}</div>
             </div>
         `)
+        .onPointHover(node => {
+            container.style.cursor = node ? 'pointer' : 'grab';
+        })
         .onPointClick(node => handleGlobalNav(node));
 
     // Controls Configuration
@@ -78,39 +83,55 @@ function initGlobe() {
     controls.autoRotate = true;
     controls.autoRotateSpeed = 1.0;
     controls.enableZoom = true;
-    
-    // Initial Orientation
+
+    // Initial Orientation (pulled back for a better holistic view)
     myGlobe.pointOfView({ lat: 20, lng: 77, altitude: 2.5 }, 0);
     console.log("Strategic Globe: Tactical Ready.");
 }
 
 function handleGlobalNav(node) {
     if (!node || !node.element) return;
-    myGlobe.controls().autoRotate = false;
-    myGlobe.pointOfView({ lat: node.lat, lng: node.lng, altitude: 1.4 }, 1200);
-    
+
+    const controls = myGlobe.controls();
+    controls.autoRotate = false;
+
+    // Smooth transit to the exact node
+    myGlobe.pointOfView({ lat: node.lat, lng: node.lng, altitude: 1.0 }, 1200);
+
     setTimeout(() => {
+        // Scroll into viewport accounting for sticky headers
         node.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Highlight the selected card prominently
         node.element.style.transition = 'all 0.5s ease';
-        node.element.style.outline = '10px solid ' + node.color;
-        node.element.style.boxShadow = '0 0 60px ' + node.color + '66';
-        
+        node.element.style.outline = '8px solid ' + node.color;
+        node.element.style.boxShadow = '0 0 50px ' + node.color + '88';
+        node.element.style.transform = 'scale(1.02)';
+        node.element.style.zIndex = '100';
+
         setTimeout(() => {
             node.element.style.outline = 'none';
             node.element.style.boxShadow = '';
-            myGlobe.controls().autoRotate = true;
-        }, 5000);
+            node.element.style.transform = '';
+            node.element.style.zIndex = '';
+            controls.autoRotate = true;
+        }, 4000);
     }, 1300);
 }
 
-function triggerRandomDiscovery() {
-    if (!nodesData.length) return;
-    handleGlobalNav(nodesData[Math.floor(Math.random() * nodesData.length)]);
-}
+// Attach directly to window object to guarantee accessibility for the Discovery Mode button
+window.triggerRandomDiscovery = function() {
+    if (!nodesData || nodesData.length === 0) {
+        console.warn("Nodes not fully loaded yet.");
+        return;
+    }
+    const randomNode = nodesData[Math.floor(Math.random() * nodesData.length)];
+    handleGlobalNav(randomNode);
+};
 
-// Robust bootstrapper
-if (document.readyState === 'complete') {
+// Robust bootstrapper covering various DOM states
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
     initGlobe();
 } else {
-    window.addEventListener('load', initGlobe);
+    window.addEventListener('DOMContentLoaded', initGlobe);
 }
